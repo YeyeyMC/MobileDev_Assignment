@@ -25,7 +25,7 @@ public class GyroStuff : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //if (GameManager.Instance != null && !GameManager.Instance.IsPlaying) return;
+        if (GameManager.Instance != null && !GameManager.Instance.IsPlaying) return;
         
         ApplyTilt();
         ClampVelocity();
